@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- ===============================================-->
+    <!--    Document Title-->
+    <!-- ===============================================-->
+    <title>Sākums</title>
+
+
+    <!-- ===============================================-->
+    <!--    Favicons-->
+    <!-- ===============================================-->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/boxlogo.png">
+    <meta name="msapplication-TileImage" content="assets/img/favicons/mstile-150x150.png">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <!-- ===============================================-->
+    <!--    Stylesheets-->
+    <!-- ===============================================-->
+    <link href="assets/css/theme.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  </head>
+
+
+  <body>
+
+    <!-- ===============================================-->
+    <!--    Main Content-->
+    <!-- ===============================================-->
+    <main class="main" id="top">
+      <nav class="navbar navbar-expand-lg navbar-light sticky-top" data-navbar-on-scroll="data-navbar-on-scroll">
+        <div class="container"><a class="navbar-brand" href="index.html"><img src="assets/img/nav-logo.png" height="31" alt="logo" /></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"> </span></button>
+          <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link" aria-current="page" href="#feature">Sākums</a></li>
+              <li class="nav-item"><a class="nav-link" aria-current="page" href="#validation">Informācija</a></li>
+              <li class="nav-item"><a class="nav-link" aria-current="page" href="#superhero">Atsauksmes</a></li>
+              <li class="nav-item"><a class="nav-link" aria-current="page" href="#marketing">Par</a></li>
+            </ul>
+            <div class="d-flex ms-lg-4"><a class="btn btn-warning ms-3" href="#!">Sākt</a></div>
+          </div>
+        </div>
+      </nav>
+      <section class="pt-7">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-66 text-md-start text-center py-6">
+              <div class="typecontainer" data-aos="fade-right" data-aos-delay="200" data-aos-duration="500">
+                <span class="text fs-9 fw-bold mb-4 text-center firsty-text">Sāc programmēt  </span>
+                <span class="text second-text fs-9 fw-bold mb-4 text-center " id="sc">C++</span>
+            </div>
+         <script>
+        
+        const text = document.querySelector(".second-text");
+      const el = document.getElementById('sc');
+      const texts = ["C++", "Python", "Lua"];
+      let index = 0;
+          
+          
+
+      const textLoad = () => {
+
+          text.textContent = texts[index];
+          if (index === 0) {
+            el.classList.add("bluecolz");
+          }
+          else if (index !== 0) {
+            el.classList.remove("bluecolz");
+
+            }
+            if (index === 1) {
+            el.classList.add("yellowcolz");
+          }
+          else if (index !== 1) {
+            el.classList.remove("yellowcolz");
+
+            }
+            if (index === 2) {
+            el.classList.add("purplecolz");
+          }
+          else if (index !== 2) {
+            el.classList.remove("purplecolz");
+
+            }
+
+          index = (index + 1) % texts.length;
+      }
+      textLoad(); // Initial load
+      setInterval(textLoad, 2000); // Repeat every 3 seconds
+        </script>
+              <p class="mb-6 lead text-secondary" data-aos="fade-right" data-aos-delay="300" data-aos-duration="500">Ar mūsu palīdzību, programmēšanas pamatus<br> var iemācīties ikviens!</p>
+              <div class="text-center text-md-start"><a class="btn btn-warning me-3 btn-lg" href="#!" role="button" data-aos="fade-right" data-aos-delay="300" data-aos-duration="500">Sākt</a></div>
+            </div>
+            <div class="imgss text-end" style="left: 250px;"><img class="pt-7 pt-md-0 img-fluid" src="assets/img/laptop.png" loading="eager" alt="" width="800" data-aos="zoom-in-up" data-aos-delay="100" data-aos-duration="600" /></div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="pt-5 pt-md-9 mb-6" id="feature">
+
+        <div class="bg-holder z-index--1 bottom-0 d-none d-lg-block" style="background-image:url(assets/img/category/shape.png);opacity:.5;">
+        </div>
+        <!--/.bg-holder-->
+
+        <div class="container">
+          <h1 class="fs-9 fw-bold mb-4 text-center"> Mēs Piedāvājam <br class="d-none d-xl-block" />3 kursu veidus</h1>
+          <div class="row2">
+            <div class="col-lg-3 dropshad" style="background-color: #D8D8D8; border-radius: 15px; height: auto; margin-top: 5%; filter: blur(2px);" data-aos="flip-right" data-aos-duration="600" data-aos-delay="100">
+              <center>
+              <img class="mb-3 ms-n3" style="margin-top: 10%;" src="assets/img/pythonlogo.png" loading="lazy"  width="150" alt="Feature" />
+              <h4 class="mb-3 fs-5 fw-bold" style="margin-top: 5%;" >Python Pamati</h4>
+              <p class="mb-0 fw-medium text-secondary" style="padding-bottom:  15%; padding-left: 10px; padding-right: 10px;">Viegli saprotama, bet ātra, tiek izmantota visādās nozarēs, piemēram, robotikā un mājaslapu izveidē <br>
+                <span style="color: red;">Kurss vēl nav sastādīts</span></p>
+              </center>
+              
+            </div>
+
+
+            <div class="col-lg-3 dropshad" style="background-color: #D8D8D8; border-radius: 15px; height: auto; margin-left: 5%; margin-right: 5%;" data-aos="flip-right" data-aos-duration="600" data-aos-delay="300">
+              <center>
+              <img class="mb-3 ms-n3" style="margin-top: 10%;" src="assets/img/cpplogo.png" loading="lazy"  width="150" alt="Feature" />
+              <h4 class="mb-3 fs-5 fw-bold" style="margin-top: 5%;" >C++ Pamati</h4>
+              <p class="mb-0 fw-medium text-secondary" style="padding-bottom:  15%; padding-left: 10px; padding-right: 10px;">Viena no visefektīvākajām programmēšanas valodām. Domāta priekš Datorspēļu veidošanas un sarežģītām aplikācijām.</p>
+              <div class="text-center" style="padding-bottom: 20%;"><a class="btn btn-warning" href="#!" role="button">Sākt</a></div>
+              </center>
+              
+            </div>
+
+
+            <div class="col-lg-3 dropshad" style="background-color: #D8D8D8; border-radius: 15px; height: auto; margin-top: 5%; filter: blur(2px);" data-aos="flip-right" data-aos-duration="600" data-aos-delay="500">
+              <center>
+              <img class="mb-3 ms-n3" style="margin-top: 10%;" src="assets/img/lualogo.png" loading="lazy" width="150" alt="Feature" />
+              <h4 class="mb-3 fs-5 fw-bold" style="margin-top: 5%;" >Lua Pamati</h4>
+              <p class="mb-0 fw-medium text-secondary" style="padding-bottom:  15%; padding-left: 10px; padding-right: 10px;">Pārsvarā domāta spēlēm kā ROBLOX un nav īpaši efektīva tādēļ ārpus datorspēlēm to ļoti neizmanto. <br>
+              <span style="color: red;">Kurss vēl nav sastādīts</span></p>
+              </center>
+              
+            </div>
+
+          </div>
+        </div><!-- end of .container-->
+
+      </section>
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+      <section class="py-md-11 py-8" id="superhero">
+
+        <div class="container">
+          <h1 class="fs-9 fw-bold mb-4 text-center">Kāpēc izvēlēties mūs?</h1>
+          <div class="dropshad" style="width: 50%; height: auto; background-color: #D8D8D8; overflow: hidden; border-radius: 10px; margin-bottom: 10%;" data-aos="fade-right" data-aos-duration="500">
+              <div>
+                <img src="assets/img/uhm.png" width="600">
+                <h4 class="mb-3 fs-5 fw-bold text-center" style="margin-top: 5%;" >Bezmaksas!</h4>
+                <p class="mb-0 fw-medium text-secondary" style="padding-left: 10px; padding-right: 10px; padding-bottom: 10px;">Mēs neņemsim ne centu no jums, jo uzskatām, ka par informācijas izplatīšanu nevajag iekasēt naudu . Šīs vietnes
+                     programmēšanas apmācība ir un būs bezmaksas uz visiem laikiem. Salīdzinot ar citām kompānījām mūsu kursu cena ir ļoti konkurētspējīga.</p>
+              </div>
+            </div>
+            <div style="justify-content: right; width: 100%; display: flex;"> 
+              <div class="dropshad" style="width: 50%; height: auto; background-color: #D8D8D8; justify-content: right; overflow: hidden; border-radius: 10px; margin-bottom: 10%;" data-aos="fade-right" data-aos-duration="500">
+              <div>
+                <img src="assets/img/clarity.jpg" width="600">
+                <h4 class="mb-3 fs-5 fw-bold text-center" style="margin-top: 5%;" >Viegli saprotams</h4>
+                <p class="mb-0 fw-medium text-secondary" style="padding-left: 10px; padding-right: 10px; padding-bottom: 10px;">Mēs neņemsim ne centu no jums, jo uzskatām, ka par informācijas izplatīšanu nevajag iekasēt naudu . Šīs vietnes
+                     programmēšanas apmācība ir un būs bezmaksas uz visiem laikiem. Salīdzinot ar citām kompānījām mūsu kursu cena ir ļoti konkurētspējīga.</p>
+                    </div>
+           
+              </div>
+            </div>
+            <div class="dropshad" style="width: 50%; height: auto; background-color: #D8D8D8; overflow: hidden; border-radius: 10px;" data-aos="fade-right" data-aos-duration="500">
+              <div>
+                <img src="assets/img/confusedman.jpg" width="600">
+                <h4 class="mb-3 fs-5 fw-bold text-center" style="margin-top: 5%;" >Labi sagatavo karjeras turpināšanai</h4>
+                <p class="mb-0 fw-medium text-secondary" style="padding-left: 10px; padding-right: 10px; padding-bottom: 10px;">Šī informācija, ko sniedzam, ir ļoti advancēta un palīdz iesācējiem veikt savus pirmos soļus programmēšanā, līdz ar to sagatavojot viņus tālāk.</p>
+              </div>
+            </div>
+
+        </div>
+   
+
+
+
+
+
+
+
+
+      </section>
+
+
+
+
+
+
+
+      <section class="py-md-11 py-8" id="superhero">
+
+        <div class="bg-holder z-index--1 bottom-0 d-none d-lg-block background-position-top" style="background-image:url(assets/img/superhero/oval.png);opacity:.5; background-position: top !important ;">
+        </div>
+        <!--/.bg-holder-->
+
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-6 text-center">
+              <h1 class="fs-9 fw-bold mb-4 text-center">Par mums</h1>
+              <p class="mb-5 text-info fw-medium">Mēs esam kvalificēti un pieredzējuši programmētāji, kas vēlās atvieglot dzīvi
+                 jauniem prātiem ar programmēšanas interesēm. Mūsu mērķis ir daudziem iemācīt programmēšanas pamatprincipus un metodiku, lai viņi varētu tālāk patstāvīgi turpināt savu programmēšanas karjeru.</p>
+              <button class="btn btn-warning btn-md">Aizrakstiet uz mūsu e-pastu </button>
+            </div>
+          </div>
+        </div><!-- end of .container-->
+
+      </section>
+
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+    
+
+
+
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="pb-2 pb-lg-5">
+
+        <div class="container">
+          <div class="row border-top border-top-secondary pt-7">
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-6 mb-lg-0 mb-sm-2 order-1 order-md-1 order-lg-1"><img class="mb-4" src="assets/img/nav-logo.png" width="184" alt="" /></div>
+            <div class="col-lg-3 col-md-6 mb-4 mb-lg-0 order-3 order-md-3 order-lg-2">
+              <p class="fs-2 mb-lg-4">Linki</p>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-1"><a class="link-900 text-secondary text-decoration-none" href="#!">Par</a></li>
+                <li class="mb-1"><a class="link-900 text-secondary text-decoration-none" href="#!">Atsauksmes</a></li>
+                <li class="mb-1"><a class="link-900 text-secondary text-decoration-none" href="#!">Informācija</a></li>
+                <li class="mb-1"><a class="link-900 text-secondary text-decoration-none" href="#!">Sākums</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4 mb-lg-0 order-4 order-md-4 order-lg-3">
+              <p class="fs-2 mb-lg-4">Legālās lietas</p>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-1"><a class="link-900 text-info fw-bold text-decoration-none" href="privpol.html">Privātuma politika</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 col-6 mb-4 mb-lg-0 order-2 order-md-2 order-lg-4">
+              <p class="fs-2 mb-lg-4">
+                Nākotnes progrāmmētājiem!</p>
+            </div>
+          </div>
+        </div><!-- end of .container-->
+
+      </section>
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+
+
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="text-center py-0">
+
+        <div class="container">
+          <div class="container border-top py-3">
+            <div class="row justify-content-between">
+              <div class="col-12 col-md-auto mb-1 mb-md-0">
+                <p class="mb-0">&copy; 2024 CodeNow </p>
+              </div>
+              
+            </div>
+          </div>
+        </div><!-- end of .container-->
+
+      </section>
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+
+    </main>
+    <!-- ===============================================-->
+    <!--    End of Main Content-->
+    <!-- ===============================================-->
+
+
+ 
+
+
+    <!-- ===============================================-->
+    <!--    JavaScripts-->
+    <!-- ===============================================-->
+    <script src="vendors/@popperjs/popper.min.js"></script>
+    <script src="vendors/bootstrap/bootstrap.min.js"></script>
+    <script src="vendors/is/is.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
+    <script src="vendors/fontawesome/all.min.js"></script>
+    <script src="assets/js/theme.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;family=Volkhov:wght@700&amp;display=swap" rel="stylesheet">
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+  </body>
+
+</html>

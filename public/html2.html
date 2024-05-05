@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  
+    <title>C++: 02</title>
+
+
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/boxlogo.png">
+    <meta name="msapplication-TileImage" content="assets/img/favicons/mstile-150x150.png">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <link href="assets/css/theme01.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <style>
+        body{
+          background-image: url('assets/img/bgmatric3.jpg');
+          background-size: cover; /* This will scale the background image to cover the entire container */
+          background-repeat: no-repeat; /* Prevents the background image from repeating */
+          background-position: center center; /* Centers the background image */
+        }
+      </style>
+  </head>
+
+
+  <body>
+
+
+    <main class="main" id="top">
+      <nav class="navbar navbar-expand-lg navbar-light sticky-top" data-navbar-on-scroll="data-navbar-on-scroll">
+        <div class="container"><a class="navbar-brand" href="index.html"><img src="assets/img/nav-logo.png" height="31" alt="logo" /></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"> </span></button>
+          <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link" aria-current="page" href="index.html">Sākums</a></li>
+              <li class="nav-item"><a class="btn btn-warning ms-3" style="justify-content: center;" href="uzdlist.html">Atpakaļ</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+
+     
+      
+
+        <div class="container1" style="background-color: white">
+           <div class=" fw-bold fs-8" style="text-align: center; padding-top: 10%; ">"Hello World!"</div>
+          <!---Info sadaļa-->
+          <div class="container">
+            <div class="gridwrapper">
+                <div>
+                  <div class=" fs-1" style="text-align: left; padding-top: 5%; padding-left: 5%; ">Kad programmētāji pirmo reizi uzsāk mācīties jaunu programmēšanas valodu, tad viena no pirmajām programmām ko viņi izveido ir programma kas izprintē tekstu "Hello World!".</div>
+                    <div class=" fs-2 fw-bold" style="text-align: left; margin-bottom: 1%; margin-top: 2%;  padding-left: 5%; ">No kā sastāv šī programma?</div>
+                    <div class=" fs-1 fw-bold" style="text-align: left; margin-bottom: 1%; margin-top: 2%;  padding-left: 5%; color: rgb(58, 194, 58);">#Include &lt;iostream&gt; un #include "pch.h"</div>
+                    <div class=" fs-1" style="text-align: left; padding-top: 2%; padding-left: 5%; ">Šie elementi ievieto C++ standarta bibliotēku, lai jūs varētu izmantot jau iepriekš sagatavotus elementus. Specifiski
+                         <strong>Iostream</strong> ir ieejas un izejas (InputOutput) bibliotēka, kas var gan printēt tekstu, gan saņemt to no lietotāja  </div>
+                    <div class=" fs-1 fw-bold" style="text-align: left; margin-bottom: 1%; margin-top: 2%;  padding-left: 5%; color: rgb(58, 194, 58);">int main()</div>
+                    <div class=" fs-1" style="text-align: left; padding-top: 2%; padding-left: 5%; ">Šo elementu sauc par funkciju, specifiskāk, galveno funkciju jo tās nosaukums ir <strong>main</strong>.
+                         <strong>Int main()</strong> nosaka C/C++ programmas koda ievadi vai sākumpunktu. Šeit <strong>int</strong> ir atslēgvārds,
+                         kas stāsta par vesela skaitļa datu tipu. Tātad, kad kāds palaiž failu savā lokālajā datorā, operētājsistēma izpilda galveno () funkciju.
+                    </div>
+                    <div class=" fs-1 fw-bold" style="text-align: left; margin-bottom: 1%; margin-top: 2%;  padding-left: 5%; color: rgb(58, 194, 58);">std::cout << "Hello World!";</div>
+                    <div class=" fs-1" style="text-align: left; padding-top: 2%; padding-left: 5%; "><strong>std::cout</strong> ir izteiciens, kura funkcija ir informācijas printēšana uz ekrāna. 
+                        <strong><<</strong> ir praktiski tas pats, kas <strong>=</strong> zīme. Ievietotais teksts pēdiņās būs teksts, kas tiks izprintēts uz ekrāna, kad programma tiks atvērta.
+                   </div>
+                    <div class=" fs-1 fw-bold" style="text-align: left; margin-bottom: 1%; margin-top: 2%;  padding-left: 5%; color: rgb(58, 194, 58);">return 0;</div>
+                    <div class=" fs-1" style="text-align: left; padding-top: 2%; padding-left: 5%; "><strong>return 0;</strong> ir kā tests, lai saprastu vai programma ir izgājusi cauri visam kodam. Ja tā ir tad konsolē būs parādīts: <br>
+                    <span style="background-color: rgb(144, 231, 144);">... exited with code 0.</span>   
+                   </div>
+                  </div>
+                  <div style="display: grid; justify-content: center; grid-template-rows: 1fr 1fr;">
+                    <div style="position: relative; width: 435px; height: 280px; background-color: rgb(226, 213, 197); border-radius: 9px; place-self: center; overflow:hidden;">
+                        <div style=" overflow: hidden;"><img src="assets/img/hellwrd.png" width="435px"></div>
+                    </div>
+                    <div style="position: relative; width: 435px; height: 280px; background-color: rgb(226, 213, 197); border-radius: 9px; place-self: center; overflow:hidden;">
+                        <div style=" overflow: hidden;"><img src="assets/img/cons.png" width="435px"></div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="container" style="background-color: white; margin-top: 5%;">
+                <div class=" fw-bold fs-5" style="text-align: center; ">Tests</div>
+                <div class="gridwrapper">
+                    <div style="width: 100%; min-height: 500px; margin-top: 5%;">
+                        <div style="display: grid; grid-template-rows: 0.5fr 0.5fr 3fr">
+                            <div>
+                                <div class="fw-bold fs-2" style="text-align: left; margin-bottom: 1%; margin-top: 2%;  padding-left: 5%">Apraksts</div>
+                                <div class="fs-1" style="text-align: left; margin-bottom: 1%;  padding-left: 5%">Kādas kļūdas ir pieļautas šajā kodā? (skat. bildi)</div>
+                            </div>
+                            <div>
+                                <div class="fw-bold fs-2" style="text-align: left; margin-bottom: 1%; margin-top: 2%;  padding-left: 5%;">Ir iespējamas vairākas pareizās atbildes</div>
+                            </div>
+                            <div class="" id="bg123">
+                                <form style="margin-top: 5%; padding-left: 5%; padding-bottom: 5%;">
+                                    <input type="checkbox" id="vehicle1" name="vehicle1" value="firstval">
+                                    <label for="vehicle1">Teksts nav pareizi ierakstīts, līdz ar to programma neieslēgsies un neizpildīs printēšanas darbību.</label>
+                                    <input type="checkbox" id="vehicle2" name="vehicle2" value="secval">
+                                    <label for="vehicle2">Nav ievietota standarta Ieejas un izejas bibliotēka, tāpēc nestrādās programma </label>
+                                    <input type="checkbox" id="vehicle3" name="vehicle3" value="thirdval">
+                                    <label for="vehicle3">Tekstā sastāv garumzīmes un komati, līdz ar to radīsies sintakses kļūda.</label><br>
+                                    <input type="button" value="Submit" onclick="checkAnswers()">
+                                  </form>
+                                  <span class="" style="padding-left: 5%; padding-bottom: 2%;" id="actiontextz"></span>
+                            </div>
+                           </div>
+                    </div>
+                    <div style="width: 100%; min-height: 500px; margin-top: 5%; display: flex; justify-content: center;">
+                        <div style=" width: 435px; height: 240px; background-color: rgb(226, 213, 197); border-radius: 9px; overflow:hidden; place-self: center;"><img src="assets/img/test1.png" width="435px"></div>
+                        </div>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; padding-bottom: 5%; padding-top: 5%;">
+                        <a class="btn btn-warning ms-3" style="justify-content: center;" href="html1.html">Iepriekšējais</a>
+                        <a class="btn btn-warning ms-3" style="justify-content: center;" href="html3.html">Nākamais</a>
+                    </div>
+                </div>
+                  
+
+                </div>
+              </div>
+          </div>
+          
+        </div>
+        
+
+        
+        <div class="container" style="background-color: white;">
+          <div class="row border-top border-top-secondary pt-7">
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-6 mb-lg-0 mb-sm-2 order-1 order-md-1 order-lg-1"><img class="mb-4" src="assets/img/nav-logo.png" width="184" alt="" /></div>
+            <div class="col-lg-3 col-md-6 mb-4 mb-lg-0 order-3 order-md-3 order-lg-2">
+              <p class="fs-2 mb-lg-4">Linki</p>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-1"><a class="link-900 text-secondary text-decoration-none" href="index.html#parr">Par</a></li>
+                <li class="mb-1"><a class="link-900 text-secondary text-decoration-none" href="index.html#kapec">Kāpēc-mūs?</a></li>
+                <li class="mb-1"><a class="link-900 text-secondary text-decoration-none" href="index.html">Sākums</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4 mb-lg-0 order-4 order-md-4 order-lg-3">
+              <p class="fs-2 mb-lg-4">Legālās lietas</p>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-1"><a class="link-900 text-info fw-bold text-decoration-none" href="privpol.html">Privātuma politika</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 col-6 mb-4 mb-lg-0 order-2 order-md-2 order-lg-4">
+              <p class="fs-2 mb-lg-4">
+                Nākotnes progrāmmētājiem!</p>
+            </div>
+          </div>
+        </div><!-- end of .container-->
+
+ 
+
+      <section class="text-center py-0">
+
+        <div class="container" style="background-color: white;">
+          <div class="container border-top py-3">
+            <div class="row justify-content-between">
+              <div class="col-12 col-md-auto mb-1 mb-md-0">
+                <p class="mb-0">&copy; 2024 CodeNow </p>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+
+      </section>
+    
+
+
+    </main>
+   
+    <script>
+        function checkAnswers() {
+            let crcheckbox1 = document.getElementById("vehicle1");
+            let crcheckbox2 = document.getElementById("vehicle2");
+            let crcheckbox3 = document.getElementById("vehicle3");
+            let  bg = document.getElementById("bg123");
+            let text = document.getElementById("actiontextz");
+            if (crcheckbox2.checked && !crcheckbox3.checked && !crcheckbox1.checked) {
+                bg.classList.remove("redd");
+                bg.classList.add("greenn");
+                text.classList.remove("colorred");
+                text.classList.add("colorlime");
+                text.textContent = "Malacis! Pareizi";
+            }
+            else {
+                bg.classList.remove("greenn");
+                bg.classList.add("redd");
+                text.classList.remove("colorlime");
+                text.classList.add("colorred");
+                text.textContent = "Sūdīgi! Pamēgini citu atbildi";
+            }
+        }
+
+    </script>
+ 
+
+
+    <!-- ===============================================-->
+    <!--    JavaScripts-->
+    <!-- ===============================================-->
+    <script src="vendors/@popperjs/popper.min.js"></script>
+    <script src="vendors/bootstrap/bootstrap.min.js"></script>
+    <script src="vendors/is/is.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
+    <script src="vendors/fontawesome/all.min.js"></script>
+    <script src="assets/js/theme.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;family=Volkhov:wght@700&amp;display=swap" rel="stylesheet">
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+  </body>
+
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  
+    <title>C++: 04</title>
+
+
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/boxlogo.png">
+    <meta name="msapplication-TileImage" content="assets/img/favicons/mstile-150x150.png">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <link href="assets/css/theme01.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <style>
+        body{
+          background-image: url('assets/img/bgmatric4.jpg');
+          background-size: cover; /* This will scale the background image to cover the entire container */
+          background-repeat: no-repeat; /* Prevents the background image from repeating */
+          background-position: center center; /* Centers the background image */
+        }
+      </style>
+  </head>
+
+
+  <body>
+
+
+    <main class="main" id="top">
+      <nav class="navbar navbar-expand-lg navbar-light sticky-top" data-navbar-on-scroll="data-navbar-on-scroll">
+        <div class="container"><a class="navbar-brand" href="index.html"><img src="assets/img/nav-logo.png" height="31" alt="logo" /></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"> </span></button>
+          <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link" aria-current="page" href="index.html">Sākums</a></li>
+              <li class="nav-item"><a class="btn btn-warning ms-3" style="justify-content: center;" href="uzdlist.html">Atpakaļ</a></li>
+            </ul>
+          </div>
+        </div>
+       </nav>
+
+     
+      
+
+        <div class="container1" style="background-color: white">
+           <div class=" fw-bold fs-8" style="text-align: center; padding-top: 10%; ">Ievadīto datu saglabāšana</div>
+          <!---Info sadaļa-->
+          <div class="container">
+            <div class="gridwrapper">
+                <div>
+                  <div class=" fs-1" style="text-align: left; padding-top: 5%; padding-left: 5%; ">
+                    Mēs ievadām datus katru dienu. Paroļu veidošana, vārda izveidošana, spēļu iestatījumu saglabāšana utt. Datu saglabāšana, īpaši cilvēka ievadīto datu saglabāšana ir svarīga lieta jebkurai programmēšanas
+                valodai, lai lietotāji varētu to kvalitatīvi izmantot.</div>
+                <div class=" fs-1" style="text-align: left; padding-top: 5%; padding-left: 5%; ">
+                    Šajā programmēšanas valodā ieraksta cilvēka ievadīto ar funkciju <strong>std::cin</strong> un bultiņas tiek apgrieztas nevis šādi: <<, bet šādi >>. un blakus šai funkcijai vajag norādīt konkrēto 
+                mainīgo (jāņem vērā arī mainīgā tips un kāda veida informāciju tu mēģini iegūt, piemēram, ciparus vai tekstu), kurā ievadīs lietotāja informāciju. Tad var atkal izmantot
+                 <strong>std::cout</strong> lai izprintētu lietotāja ievadīto informāciju</div>
+                 <div class=" fs-1" style="text-align: left; padding-top: 5%; padding-left: 5%; ">
+                    Ja lietotājs gadījumā ievada ciparus nevis tekstu, tad programma beigs darboties, tāpēc vajag ievietot kodu, kas izpildīs noteiktas darbības gadījumā,
+                     ja lietotājs nepareizā formātā ievadījis informāciju. Bet tas ir par sarežģītu vēl, tāpēc labāk raksti informāciju pareizā formātā :D.</div>
+                     </div>
+                  <div style="display: grid; justify-content: center;">
+                    <div style="position: relative; width: 435px; height: 210px; background-color: rgb(226, 213, 197); border-radius: 9px; place-self: center; overflow:hidden;">
+                        <div style=" overflow: hidden;"><img src="assets/img/uinput.png" width="435px"></div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="container" style="background-color: white; margin-top: 5%;">
+                    <div class="fw-bold fs-2" style="text-align: left; margin-bottom: 1%; margin-top: 2%;  padding-left: 3%;">Piemērs:</div>
+                    <div class="fs-1" style="text-align: left; margin-top: 2%;  padding-left: 3%;">Cik tev ir gadu?</div>
+                    <input type="number" class="css-input" id="ageval"> <br>
+                    <input type="button" value="Submit" min="1" max="100" onclick="cikGadu()" style="margin-left: 3%; margin-bottom: 5%;">
+                    <div style="display: flex; justify-content: space-between; padding-bottom: 5%; padding-top: 5%;">
+                        <a class="btn btn-warning ms-3" style="justify-content: center;" href="html3.html">Iepriekšējais</a>
+                        <a class="btn btn-warning ms-3" style="justify-content: center;" href="html5.html">Nākamais</a>
+                    </div>
+                    </div>
+                </div>
+
+                
+
+        
+        <div class="container" style="background-color: white;">
+          <div class="row border-top border-top-secondary pt-7">
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-6 mb-lg-0 mb-sm-2 order-1 order-md-1 order-lg-1"><img class="mb-4" src="assets/img/nav-logo.png" width="184" alt="" /></div>
+            <div class="col-lg-3 col-md-6 mb-4 mb-lg-0 order-3 order-md-3 order-lg-2">
+              <p class="fs-2 mb-lg-4">Linki</p>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-1"><a class="link-900 text-secondary text-decoration-none" href="index.html#parr">Par</a></li>
+                <li class="mb-1"><a class="link-900 text-secondary text-decoration-none" href="index.html#kapec">Kāpēc-mūs?</a></li>
+                <li class="mb-1"><a class="link-900 text-secondary text-decoration-none" href="index.html">Sākums</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4 mb-lg-0 order-4 order-md-4 order-lg-3">
+              <p class="fs-2 mb-lg-4">Legālās lietas</p>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-1"><a class="link-900 text-info fw-bold text-decoration-none" href="privpol.html">Privātuma politika</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 col-6 mb-4 mb-lg-0 order-2 order-md-2 order-lg-4">
+              <p class="fs-2 mb-lg-4">
+                Nākotnes progrāmmētājiem!</p>
+            </div>
+          </div>
+        </div><!-- end of .container-->
+
+ 
+
+      <section class="text-center py-0">
+
+        <div class="container" style="background-color: white;">
+          <div class="container border-top py-3">
+            <div class="row justify-content-between">
+              <div class="col-12 col-md-auto mb-1 mb-md-0">
+                <p class="mb-0">&copy; 2024 CodeNow </p>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+
+      </section>
+    
+
+
+    </main>
+   
+    <script>
+        function checkAnswers() {
+            let crcheckbox1 = document.getElementById("vehicle1");
+            let crcheckbox2 = document.getElementById("vehicle2");
+            let crcheckbox3 = document.getElementById("vehicle3");
+            let crcheckbox4 = document.getElementById("vehicle4");
+            let crcheckbox5 = document.getElementById("vehicle5");
+            let  bg = document.getElementById("bg123");
+            let text = document.getElementById("actiontextz");
+            if (crcheckbox3.checked && crcheckbox4.checked && !crcheckbox5.checked && !crcheckbox1.checked && !crcheckbox2.checked) {
+                bg.classList.remove("redd");
+                bg.classList.add("greenn");
+                text.classList.remove("colorred");
+                text.classList.add("colorlime");
+                text.textContent = "Malacis! Pareizi";
+            }
+            else {
+                bg.classList.remove("greenn");
+                bg.classList.add("redd");
+                text.classList.remove("colorlime");
+                text.classList.add("colorred");
+                text.textContent = "Sūdīgi! Pamēgini citu atbildi";
+            }
+        }
+        function cikGadu() {
+            let variablez = document.getElementById("ageval");
+            if (variablez.value <= 10 && !0) {
+                alert(variablez.value + "! " + "Jūs nu gan esat jauns/a!");
+            }
+            else if (variablez.value <= 20 && !0) {
+                alert(variablez.value + "! " + "Labs laiks priekš mācīšanās programmēt!");
+            }
+            else if(variablez.value <= 50 && !0) {
+                alert(variablez.value + "! " + "Ir vēl laiks iemācīties programmēt.");
+            }
+            else if (variablez.value <= 100 && !0) {
+                alert(variablez.value + "! " + "Jūs nu gan esat vecs/a!");
+            }
+            else if (variablez.value >= 101 && !0) {
+                alert(variablez.value + "! " + "Eu sīkais, labāk beidz melot internetā, tas nav labi!");
+            }
+        }
+
+    </script>
+ 
+
+
+    <!-- ===============================================-->
+    <!--    JavaScripts-->
+    <!-- ===============================================-->
+    <script src="vendors/@popperjs/popper.min.js"></script>
+    <script src="vendors/bootstrap/bootstrap.min.js"></script>
+    <script src="vendors/is/is.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
+    <script src="vendors/fontawesome/all.min.js"></script>
+    <script src="assets/js/theme.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;family=Volkhov:wght@700&amp;display=swap" rel="stylesheet">
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+  </body>
+
+</html>
